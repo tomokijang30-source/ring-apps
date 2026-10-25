@@ -12,7 +12,7 @@ const EULA = 'https://www.apple.com/legal/internet-services/itunes/appstore/dev/
 const EFFECTIVE = '2026-10-24';
 const LANGS = ['en', 'ko', 'fr', 'ja', 'zh-Hant'];
 const LANG_LABEL = { en: 'English', ko: '한국어', fr: 'Français', ja: '日本語', 'zh-Hant': '繁體中文' };
-const APP = { en: 'Shift Pay', ko: 'Shift Pay', fr: 'Shift Pay', ja: 'Shift Pay', 'zh-Hant': 'Shift Pay' };
+const APP = { en: 'Noxshift', ko: 'Noxshift', fr: 'Noxshift', ja: 'Noxshift', 'zh-Hant': 'Noxshift' }; // 10-25 오너 확정. URL 경로 shiftpay/는 스토어 링크 유지를 위해 그대로
 
 const T = {
   en: {
