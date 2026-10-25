@@ -1,6 +1,6 @@
 // ring-apps 페이지 생성기(I2, 2026-10-24). 실행: node _src/gen.mjs → shiftpay/<lang>/{privacy,support,terms}/index.html
 // 내용 기준: skeleton store/app-privacy.md(수집 표) + legal/privacy.md(항목 구성) + app1 SPEC v1.1 §8-2(저장 위치)·§8-5(이벤트, 금액 원값 없음).
-// 운영자 '링(Ring)' 개인사업자. 문의 메일은 확정 전이라 tomokijang30@gmail.com(변경 예정).
+// 운영자 '링(Ring)' 개인사업자. 문의 메일은 확정 전이라 tomokijang30@gmail.com(10-25 오너 확정).
 // 앱 이름은 브랜드 확정 전이라 'Shift Pay'(en 홈 화면 이름, 가칭)로 쓴다. 브랜드가 정해지면 APP 값을 바꾸고 다시 돌린다.
 import { mkdirSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
@@ -19,7 +19,7 @@ const T = {
     nav: { privacy: 'Privacy Policy', support: 'Support', terms: 'Terms of Use' },
     operator: 'Operated by Ring (링), a sole proprietorship in the Republic of Korea.',
     effective: `Effective date: ${EFFECTIVE}`,
-    emailNote: '(this address will change; this page will be updated)',
+    emailNote: '',
     privacy: {
       title: 'Privacy Policy',
       intro: `This policy explains how the ${APP.en} app (a shift calendar with an overtime pay estimate, "the App") handles your information.`,
@@ -96,7 +96,7 @@ const T = {
     nav: { privacy: '개인정보처리방침', support: '지원', terms: '이용약관' },
     operator: '운영자: 링(Ring), 대한민국 개인사업자',
     effective: `시행일: ${EFFECTIVE}`,
-    emailNote: '(변경 예정 주소이며, 바뀌면 이 페이지를 고칩니다)',
+    emailNote: '',
     privacy: {
       title: '개인정보처리방침',
       intro: `링(Ring, 이하 "운영자")은 ${APP.ko} 앱(교대 근무표와 초과근무 수당 추정, 이하 "앱")을 운영하며 「개인정보 보호법」 등 관련 법령을 지킵니다. 이 방침은 앱이 정보를 어떻게 처리하는지 알려 드립니다.`,
@@ -177,7 +177,7 @@ const T = {
     nav: { privacy: 'Politique de confidentialité', support: 'Assistance', terms: 'Conditions d\'utilisation' },
     operator: 'Éditeur : Ring (링), entreprise individuelle, République de Corée.',
     effective: `Date d'entrée en vigueur : ${EFFECTIVE}`,
-    emailNote: '(adresse provisoire ; cette page sera mise à jour)',
+    emailNote: '',
     privacy: {
       title: 'Politique de confidentialité',
       intro: `Cette politique explique comment l'app ${APP.fr} (planning de travail en équipe avec estimation des heures supplémentaires, « l'app ») traite vos informations.`,
@@ -254,7 +254,7 @@ const T = {
     nav: { privacy: 'プライバシーポリシー', support: 'サポート', terms: '利用規約' },
     operator: '運営者：Ring（링）、大韓民国の個人事業者',
     effective: `施行日：${EFFECTIVE}`,
-    emailNote: '（変更予定のアドレスです。変わった場合はこのページを更新します）',
+    emailNote: '',
     privacy: {
       title: 'プライバシーポリシー',
       intro: `このポリシーは、${APP.ja} アプリ（シフト表と残業代の目安計算、以下「本アプリ」）が情報をどのように扱うかを説明します。`,
@@ -331,7 +331,7 @@ const T = {
     nav: { privacy: '隱私權政策', support: '客服支援', terms: '使用條款' },
     operator: '營運者：Ring（링），大韓民國個人事業',
     effective: `生效日期：${EFFECTIVE}`,
-    emailNote: '（此信箱之後會更換，屆時會更新本頁）',
+    emailNote: '',
     privacy: {
       title: '隱私權政策',
       intro: `本政策說明 ${APP['zh-Hant']} App（輪班班表與加班費估算，以下稱「本 App」）如何處理你的資訊。`,
