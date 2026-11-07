@@ -11,12 +11,13 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const EMAIL = 'tomokijang30@gmail.com';
 const EULA = 'https://www.apple.com/legal/internet-services/itunes/appstore/dev/stdeula/';
 const EFFECTIVE = '2026-11-07';
+const BIZ = { ko: '상호 링 · 대표자 장유승 · 사업자등록번호 249-73-00647 · 주소 서울특별시 관악구 남부순환로151길 6(신림동), 08762', en: 'Ring (링), sole proprietorship · Representative: Jang Yuseung (장유승) · Business registration no. 249-73-00647 · Address: 6, Nambusunhwan-ro 151-gil, Gwanak-gu, Seoul 08762, Republic of Korea' };
 
 const T = {
   ko: {
     nav: { privacy: '개인정보 처리방침', terms: '이용약관', support: '문의' },
     other: ['English', 'en/'],
-    operator: '운영: 링(Ring), 대한민국 개인사업자',
+    operator: '운영: 링(Ring), 대한민국 개인사업자 · 대표 장유승 · 사업자등록번호 249-73-00647',
     effective: `시행일: ${EFFECTIVE}`,
     privacy: {
       title: '개인정보 처리방침',
@@ -65,7 +66,7 @@ const T = {
         ['제11조 자동화된 결정', ['앱의 자동 분류(가게 → 칸, 출금 → 옮긴 돈 등)는 사용자 iPhone 안의 계산이며 법적 효과가 있는 결정이 아닙니다. 사용자가 1탭으로 바로잡을 수 있습니다.']],
         ['제12조 아동', ['앱은 14세 미만을 대상으로 하지 않습니다.']],
         ['제13조 개인정보 보호책임자', [
-          `성명: 링 대표 [오너 성명 — 기재 필요] · 메일: ${EMAIL}`,
+          `성명: 장유승(링 대표) · 메일: ${EMAIL}`,
         ]],
         ['제14조 권익침해 구제 방법', [
           '개인정보침해신고센터 국번 없이 118 (privacy.kisa.or.kr) · 개인정보 분쟁조정위원회 1833-6972 (www.kopico.go.kr) · 대검찰청 1301 · 경찰청 182',
@@ -96,7 +97,7 @@ const T = {
         ['환불', ['Apple 결제는 Apple 환불 정책을 따릅니다(https://reportaproblem.apple.com). 「전자상거래 등에서의 소비자보호에 관한 법률」 제17조 제2항 제5호에 따라 디지털 콘텐츠는 제공이 시작되면 청약철회가 제한될 수 있으며, 회사는 7일 무료 체험으로 미리 써 볼 수 있게 합니다.']],
         ['면책', ['자동으로 읽은 결과의 정확성을 보장하지 않습니다. 금융 조언이 아닙니다. 회사는 은행·카드사와 제휴 관계가 없습니다.']],
         ['AI 기능(선택)', ['기본 꺼짐. 켤 때만 사용자가 쓴 한 줄을 Anthropic(미국)으로 보내며, 자세한 내용은 개인정보 처리방침 제7조에 있습니다.']],
-        ['판매자 정보', [`상호: 링 · 대표자: [오너 성명 — 기재 필요] · 사업자등록번호: [기재 필요] · 주소: [기재 필요] · 메일: ${EMAIL}`]],
+        ['판매자 정보', [`${BIZ.ko} · 메일: ${EMAIL}`]],
       ],
     },
     support: {
@@ -111,7 +112,7 @@ const T = {
   en: {
     nav: { privacy: 'Privacy Policy', terms: 'Terms of Use', support: 'Support' },
     other: ['한국어', '../'],
-    operator: 'Operated by Ring (링), a sole proprietorship in the Republic of Korea.',
+    operator: 'Operated by Ring (링), a sole proprietorship in the Republic of Korea. Representative: Jang Yuseung · Business registration no. 249-73-00647',
     effective: `Effective date: ${EFFECTIVE}`,
     privacy: {
       title: 'Privacy Policy',
@@ -138,7 +139,7 @@ const T = {
           'Kakepo 1 Year (auto-renewing, 7-day free trial for eligible users) and Kakepo Lifetime (one-time) are processed by Apple. We never see card details. Apple\'s policy: https://www.apple.com/legal/privacy/',
         ]],
         ['Contact and changes', [
-          `Privacy contact: the representative of Ring, ${EMAIL}. Emails you send are used only to reply and deleted 1 year after we reply.`,
+          `Privacy contact: Jang Yuseung, representative of Ring, ${EMAIL}. Emails you send are used only to reply and deleted 1 year after we reply.`,
           'Changes are posted here with a new effective date; important changes are announced at least 7 days in advance.',
         ]],
       ],
@@ -155,7 +156,7 @@ const T = {
         ]],
         ['When the trial or subscription ends', ['Auto-recording, the Lock Screen number, the after-payment line and Shortcuts actions stop. Records and balances you already have stay visible in the App.']],
         ['Estimates', ['Numbers are estimates from the balance you enter and the alerts received. Missing or late alerts can make them differ. Not financial or tax advice.']],
-        ['Contact', [EMAIL]],
+        ['Seller', [`${BIZ.en} · ${EMAIL}`]],
       ],
     },
     support: {
